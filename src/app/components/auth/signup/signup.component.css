@@ -1,0 +1,23 @@
+mat-card-header{
+  padding-bottom: 15px;
+}
+.example-card {
+  max-width: 400px;
+}
+.custom-form-field {
+  width: 100%;
+  margin-bottom: 16px;
+}
+.center-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+.mat-card-actions {
+  display: flex;
+  justify-content: space-between;
+}
+.mat-card-actions button {
+  margin-right: 20px;
+}
