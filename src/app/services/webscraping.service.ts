@@ -9,7 +9,7 @@ import { catchError, Observable, retry, throwError } from 'rxjs';
 })
 export class WebscrapingService {
 
-  base_Url = environment.baseURL;
+  base_Url = environment.baseURL + 'offshoreentity';
 
   constructor(private http: HttpClient) { }
 

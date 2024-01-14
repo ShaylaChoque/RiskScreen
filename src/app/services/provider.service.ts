@@ -9,7 +9,7 @@ import { catchError, Observable, retry, throwError } from 'rxjs';
 })
 export class ProviderService {
 
-  base_Url = environment.baseURL;
+  base_Url = environment.baseURL + 'provider';
 
   constructor( private http: HttpClient) { }
 
