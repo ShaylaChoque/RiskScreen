@@ -32,6 +32,8 @@ import { UserService } from '../../../services/user.service';
 })
 
 export class LoginComponent {
+  isLogged = false;
+
   username: string = '';
   password: string = '';
 

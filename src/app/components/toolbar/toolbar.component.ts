@@ -18,11 +18,19 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 export class ToolbarComponent {
   constructor(private router: Router) { }
 
-  navigateToProviders() {
-    this.router.navigate(['/provider-table']);
+  isOnLoginOrSignupPage(): boolean {
+    return this.router.url === '/login' || this.router.url === '/signup';
   }
 
+  navigateToProviders() {
+    if (!this.isOnLoginOrSignupPage()) {
+      this.router.navigate(['/providers']);
+    }
+  }
+  
   navigateToLogin() {
-    this.router.navigate(['/login']);
+    if (!this.isOnLoginOrSignupPage()) {
+      this.router.navigate(['/login']);
+    }
   }
 }
