@@ -44,9 +44,8 @@ export class LoginComponent {
 
   login() {
     this.userService.login(this.username, this.password).subscribe(
-      response => {
+      () => {
         console.log("Authentication successful");
-        // Puedes manejar la respuesta según tus necesidades, como almacenar el token, etc.
         this.router.navigate(['/provider-table']);
       },
       error => {
